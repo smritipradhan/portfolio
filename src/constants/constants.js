@@ -2,5 +2,26 @@
 
 export const CONSTANT = {
   HELLO: "Hey There I am here to help you",
-  HEADER: ["Home", "About", "Tech Stack", "Projects", "Contacts"],
+  HEADER: [
+    {
+      name: "Home",
+      path: "",
+    },
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Tech Stack",
+      path: "/techstack",
+    },
+    {
+      name: "Projects",
+      path: "",
+    },
+    {
+      name: "Contacts",
+      path: "",
+    },
+  ],
 };

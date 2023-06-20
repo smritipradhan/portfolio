@@ -1,15 +1,21 @@
+@import "./../../../../index.scss";
 .techContainer {
-  margin: 100px 0px;
-  padding: 40px 230px;
+  margin: 50px 0px;
+  padding: 40px 20px;
   display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+
   .techHeaderLight {
     color: #42446e;
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   .techHeaderDark {
     color: #9b9ba3;
@@ -17,18 +23,24 @@
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   .thingsBuiltDark {
     font-weight: 400;
     font-size: 28px;
     color: #9b9ba3;
     line-height: 26px;
+    display: flex;
+    justify-content: center;
   }
   .thingsBuiltLight {
     font-weight: 400;
     font-size: 28px;
     color: #42446e;
     line-height: 26px;
+    display: flex;
+    justify-content: center;
   }
   .tech {
     margin-top: 80px;
@@ -36,5 +48,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    @include maxWidth(400) {
+      justify-content: center !important;
+    }
   }
 }

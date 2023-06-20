@@ -1,12 +1,18 @@
-.projectContainer {
-  padding: 40px 230px;
+@import "./../../../../index.scss";
 
+.projectContainer {
+  padding: 0px 20px 200px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
   .projectHeaderLight {
     color: #42446e;
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   .projectHeaderDark {
     color: #9b9ba3;
@@ -14,24 +20,34 @@
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   .thingsBuiltDark {
     font-weight: 400;
     font-size: 28px;
     color: #9b9ba3;
     line-height: 26px;
+    display: flex;
+    justify-content: center;
   }
   .thingsBuiltLight {
     font-weight: 400;
     font-size: 28px;
     color: #42446e;
     line-height: 26px;
+    display: flex;
+    justify-content: center;
   }
   .projectCardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 100px;
     row-gap: 50px;
+    column-gap: 20px;
+    @include maxWidth(768) {
+      justify-content: center;
+    }
   }
 }

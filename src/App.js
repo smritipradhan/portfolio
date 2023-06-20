@@ -1,9 +1,10 @@
-import styles from "./App.module.scss";
-import Header from "./components/Header/Header";
-import LandingPage from "./pages/landingPage/LandingPage";
 import { useContext } from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
 import { UserContext } from "./context/UserContext";
-import Footer from "./components/Footer/Footer";
+import About from "./pages/about/About";
+import LandingPage from "./pages/landingPage/LandingPage";
+import TechStackPage from "./pages/techStackPage/techStackPage";
 
 const App = () => {
   const { theme } = useContext(UserContext);
@@ -11,14 +12,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <div
-        className={
-          theme === "dark" ? styles.containerDark : styles.containerLight
-        }
-      >
-        <LandingPage />
-      </div>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/techstack" element={<TechStackPage />} />
+      </Routes>
     </>
   );
 };

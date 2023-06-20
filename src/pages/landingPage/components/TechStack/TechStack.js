@@ -8,8 +8,14 @@ import JS from "./../../../../assets/images/js.svg";
 import ReactImage from "./../../../../assets/images/react.svg";
 import Redux from "./../../../../assets/images/redux.svg";
 import bootstrap from "./../../../../assets/images/bootstrap.svg";
+import sass from "./../../../../assets/images/sass.svg";
+import postman from "./../../../../assets/images/postman.svg";
+import vscode from "./../../../../assets/images/vscode.svg";
+import githubDark from "./../../../../assets/images/githubdark.svg";
+import githubLight from "./../../../../assets/images/githublight.svg";
 
 const TechStack = () => {
+  const { theme } = useContext(UserContext);
   const techStack = [
     {
       techImage: HTML,
@@ -29,8 +35,20 @@ const TechStack = () => {
     {
       techImage: bootstrap,
     },
+    {
+      techImage: sass,
+    },
+    {
+      techImage: postman,
+    },
+    {
+      techImage: vscode,
+    },
+    {
+      techImage: theme === "dark" ? githubDark : githubLight,
+    },
   ];
-  const { theme } = useContext(UserContext);
+
   return (
     <div className={styles.techContainer}>
       <div

@@ -1,19 +1,26 @@
+@import "./../../index.scss";
+
 .headerContainer {
-  padding: 17px 230px;
+  padding: 17px 20px;
   display: flex;
   justify-content: space-between;
-
+  @include maxWidth(768) {
+    padding: 17px 20px;
+  }
   .headerItemContainerDark {
     display: flex;
     gap: 30px;
     color: black;
     width: 100%;
     align-items: center;
-    .headerItem {
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 26px;
+    .navlinkHeader {
+      text-decoration: none;
+      .headerItem {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+      }
     }
   }
   .headerItemContainerLight {
@@ -22,12 +29,14 @@
     gap: 30px;
     width: 100%;
     align-items: center;
-
-    .headerItem {
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 26px;
+    .navlinkHeader {
+      text-decoration: none;
+      .headerItem {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+      }
     }
   }
 }

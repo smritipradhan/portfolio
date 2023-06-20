@@ -1,3 +1,26 @@
-.footerContainer {
-  padding: 17px 230px;
+.footerContainerDark {
+  padding: 30px 20px;
+  background-color: black;
+  border-top: 1px solid white;
+  color: #9b9ba3;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footerContainerLight {
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid rgb(181, 176, 176);
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.developedBy {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
