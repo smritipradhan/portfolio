@@ -9,21 +9,24 @@ import Footer from "../../components/Footer/Footer";
 const LandingPage = () => {
   const { theme } = useContext(UserContext);
   useEffect(() => {
-    consoleText(["Hello World.", "Console Text", "Made with Love."], "text", [
-      "tomato",
-      "rebeccapurple",
-      "lightblue",
-    ]);
+    if (theme === "dark")
+      consoleText(
+        [
+          `"I Craft digital experiences with pixel-perfect precision."`,
+          `"I Bring Designs to Life with Code"`,
+          `"I Transforming Ideas into Visually Stunning Websites"`,
+        ],
+        "text",
+        ["white"]
+      );
 
     function consoleText(words, id, colors) {
       if (colors === undefined) colors = ["#fff"];
-      var visible = true;
-      var con = document.getElementById("console");
       var letterCount = 1;
       var x = 1;
       var waiting = false;
       var target = document.getElementById(id);
-      target.setAttribute("style", "color:" + colors[0]);
+      target.setAttribute("style", `color:${colors[0]}`);
       window.setInterval(function () {
         if (letterCount === 0 && waiting === false) {
           waiting = true;
@@ -49,9 +52,9 @@ const LandingPage = () => {
           target.innerHTML = words[0].substring(0, letterCount);
           letterCount += x;
         }
-      }, 120);
+      }, 30);
     }
-  }, []);
+  }, [theme]);
   return (
     <div
       className={
@@ -70,12 +73,15 @@ const LandingPage = () => {
           <br />
           <span className={styles.name}>Smriti</span>
           <br />
-          <span className={styles.craft}>
-            "I Craft digital experiences with pixel-perfect precision."
-          </span>
-          <div className={styles.consoleContainer}>
-            <span id="text"></span>
-          </div>
+          {theme === "dark" ? (
+            <div className={styles.consoleContainer}>
+              <span id="text"></span>
+            </div>
+          ) : (
+            <span className={styles.craft}>
+              "I Craft digital experiences with pixel-perfect precision."
+            </span>
+           )} 
         </div>
         <div className={styles.imageContainer}>
           {" "}

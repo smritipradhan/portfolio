@@ -66,9 +66,9 @@ const TechStack = () => {
         Technologies I’ve been working with recently
       </div>
       <div className={styles.tech}>
-        {techStack.map((tech) => {
+        {techStack.map((tech, index) => {
           return (
-            <div>
+            <div className={styles.techItem}>
               <img src={tech.techImage} alt="tech" />
             </div>
           );

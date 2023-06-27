@@ -53,3 +53,14 @@
     }
   }
 }
+.techItem:nth-child(4) {
+  animation: loading 15s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

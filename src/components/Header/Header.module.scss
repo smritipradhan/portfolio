@@ -1,7 +1,7 @@
 @import "./../../index.scss";
 
 .headerContainer {
-  padding: 17px 20px;
+  padding: 17px 22px;
   display: flex;
   justify-content: space-between;
   @include maxWidth(768) {
@@ -14,7 +14,8 @@
     width: 100%;
     align-items: center;
     .navlinkHeader {
-      text-decoration: none;
+      text-decoration: none !important;
+      color: black !important;
       .headerItem {
         cursor: pointer;
         font-weight: 500;
@@ -30,7 +31,8 @@
     width: 100%;
     align-items: center;
     .navlinkHeader {
-      text-decoration: none;
+      text-decoration: none !important;
+      color: white !important;
       .headerItem {
         cursor: pointer;
         font-weight: 500;
