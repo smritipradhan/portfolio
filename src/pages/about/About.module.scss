@@ -1,0 +1,70 @@
+@import "./../../index.scss";
+.containerLight {
+  background-color: #ffffff;
+  height: 100%;
+  overflow: scroll;
+  padding: 60px 230px;
+
+  @include maxWidth(1080) {
+    padding: 60px 100px;
+  }
+  @include maxWidth(768) {
+    padding: 30px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    color: #42446e;
+  }
+  .aboutme {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #666666;
+    margin-bottom: 38px;
+  }
+  .workExperienceSection {
+    padding: 40px 0px;
+    border-bottom: 0.5px solid #666666;
+  }
+  .educationSection {
+    margin-top: 20px;
+  }
+}
+
+.containerDark {
+  background-color: black;
+  height: 100%;
+  overflow: scroll;
+  padding: 60px 230px;
+  @include maxWidth(1080) {
+    padding: 30px 100px;
+  }
+  @include maxWidth(768) {
+    padding: 30px 30px;
+  }
+  .titleDark {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    color: #bdbed3;
+  }
+  .aboutmeDark {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    color: #bdbed3;
+    margin-bottom: 38px;
+  }
+  .workExperienceSection {
+    padding: 40px 0px;
+    border-bottom: 0.5px solid white;
+  }
+  .educationSection {
+    margin-top: 20px;
+  }
+}

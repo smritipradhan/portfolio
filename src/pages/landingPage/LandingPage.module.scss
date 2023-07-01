@@ -24,8 +24,9 @@
     padding: 60px 90px;
   }
   @include maxWidth(768) {
-    padding: 20px 50px;
+    padding: 20px 25px;
     flex-wrap: wrap;
+    display: block;
   }
   .introTextDark {
     color: white;
@@ -34,6 +35,12 @@
     line-height: 60px;
     letter-spacing: -1px;
     font-weight: 700;
+    @include maxWidth(768) {
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      font-weight: 700;
+    }
   }
 
   .introTextLight {
@@ -54,6 +61,7 @@
     }
     @include maxWidth(768) {
       margin: 30px auto !important;
+      justify-content: center;
     }
   }
   .craft {

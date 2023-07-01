@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../context/UserContext";
-import styles from "./techStackPage.module.scss";
-import TechStack from "./../landingPage/components/TechStack/TechStack";
+import styles from "./Contact.module.scss";
 
-const TechStackPage = () => {
+const Contact = () => {
   const { theme } = useContext(UserContext);
   return (
     <div
@@ -11,9 +10,10 @@ const TechStackPage = () => {
         theme === "dark" ? styles.containerDark : styles.containerLight
       }
     >
-      <TechStack />
+      For more queries Contact -{" "}
+      <span className={styles.email}>smritipradhan545@gmail.com</span>
     </div>
   );
 };
 
-export default TechStackPage;
+export default Contact;

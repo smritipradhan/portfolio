@@ -1,0 +1,98 @@
+.softwareType {
+  display: flex;
+  justify-content: space-between;
+  .role {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+  }
+  .roleDark {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #bdbed3;
+    display: flex;
+    align-items: center;
+  }
+  .type {
+    height: 26px;
+    padding: 1px 31px;
+    background: #d3f4da;
+    border-radius: 100px;
+    .typeText {
+      color: #029411;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 26px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.locationDate {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  .location {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .locationDark {
+    color: #bdbed3;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .locationIcon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.duration {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.durationDark {
+  color: #bdbed3;
+  font-size: 14px;
+  font-weight: 300;
+}
+.projectContainer {
+  margin-top: 15px;
+
+  .projectTitle {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .projectTitleDark {
+    color: #bdbed3;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .projectDescription {
+    margin-top: 10px;
+    .descriptionDark {
+      color: #bdbed3;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+    .description {
+      color: #666666;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+}

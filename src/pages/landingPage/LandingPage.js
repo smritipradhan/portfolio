@@ -1,5 +1,7 @@
+// @ts-ignore
 import styles from "./LandingPage.module.scss";
 import Profile from "./../../assets/images/profile.svg";
+import React from "react";
 import { useContext, useEffect } from "react";
 import { UserContext } from "../../context/UserContext";
 import MyProject from "./components/MyProject/MyProject";
@@ -81,7 +83,7 @@ const LandingPage = () => {
             <span className={styles.craft}>
               "I Craft digital experiences with pixel-perfect precision."
             </span>
-           )} 
+          )}
         </div>
         <div className={styles.imageContainer}>
           {" "}

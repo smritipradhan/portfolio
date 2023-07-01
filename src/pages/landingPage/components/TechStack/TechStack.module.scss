@@ -38,7 +38,7 @@
     font-weight: 400;
     font-size: 28px;
     color: #42446e;
-    line-height: 26px;
+    line-height: 30px;
     display: flex;
     justify-content: center;
   }
@@ -48,8 +48,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    @include maxWidth(400) {
+    @include maxWidth(768) {
       justify-content: center !important;
+      justify-content: center;
     }
   }
 }

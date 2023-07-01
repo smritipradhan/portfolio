@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TachStack.module.scss";
+import styles from "./TechStack.module.scss";
 import { useContext } from "react";
 import { UserContext } from "../../../../context/UserContext";
 import HTML from "./../../../../assets/images/html.svg";

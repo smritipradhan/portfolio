@@ -17,11 +17,12 @@ export const CONSTANT = {
     },
     {
       name: "Projects",
-      path: "",
+      path: "/project",
     },
     {
       name: "Contacts",
-      path: "",
+      path: "/contact",
     },
   ],
+  ABOUTME: `I am a skilled frontend developer with expertise in React, JavaScript, TypeScript,Flutter , Redux , Redux Toolkit and Unit Testing using JEST and RTL. With over one year of professional experience, I have successfully worked on two projects, honing my abilities in creating robust and interactive user interfaces.My proficiency in React allows me to develop dynamic and visually appealing web applications. `,
 };

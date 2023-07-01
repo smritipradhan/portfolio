@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../../context/UserContext";
+import styles from "./projectPage.module.scss";
+import MyProject from "./../landingPage/components/MyProject/MyProject";
 
-const projectPage = () => {
-  return <div>projectPage</div>;
+const ProjectPage = () => {
+  const { theme } = useContext(UserContext);
+  return (
+    <div
+      className={
+        theme === "dark" ? styles.containerDark : styles.containerLight
+      }
+    >
+      <MyProject />
+    </div>
+  );
 };
 
-export default projectPage;
+export default ProjectPage;
