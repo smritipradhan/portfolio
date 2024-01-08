@@ -3,25 +3,35 @@ import styles from "./MyProject.module.scss";
 import { useContext } from "react";
 import { UserContext } from "../../../../context/UserContext";
 import Card from "../../../../components/Card/Card";
-import projectBackground1 from "./../../../../assets/images/projectBackground.svg";
+import trelloClone from "./../../../../assets/images/trello.png";
 import projectBackground2 from "./../../../../assets/images/projectBackground2.svg";
 import projectBackground3 from "./../../../../assets/images/projectBackground3.svg";
 import projectBackground4 from "./../../../../assets/images/projectBackground4.svg";
 import projectBackground5 from "./../../../../assets/images/projectBackground5.svg";
 import projectBackground6 from "./../../../../assets/images/projectBackground6.svg";
+import spotify from "./../../../../assets/images/spotify-clone.png";
 
 const MyProject = () => {
   const { theme } = useContext(UserContext);
   const project = [
     {
-      image: projectBackground1,
-      projectTitle: "Favourite using Redux Toolkit",
+      image: trelloClone,
+      projectTitle: "Trello Clone",
       projectDescription:
-        "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-      techStack: "Redux Toolkit, JavaScript, SCSS, HTML",
-      link: "",
-      githubLink:
-        "https://github.com/smritipradhan/react-redux-favourite-product",
+        "Developed a Trello-inspired project management tool, leveraging my frontend development skills. Implemented intuitive user interfaces for task management, real-time updates, and collaboration features.",
+      techStack:
+        "NEXT JS, Node, Express, Mongo DB, Redux Toolkit, React Form Hook",
+      link: "https://trello-indol-alpha.vercel.app/user/workspaces",
+      githubLink: "https://trello-indol-alpha.vercel.app/user/workspaces",
+    },
+    {
+      image: spotify,
+      projectTitle: "Spotify Clone",
+      projectDescription:
+        "This dynamic application replicates the key features of Spotify, allowing users to explore, discover, and enjoy their favourite tunes in a seamless and visually appealing environment.",
+      techStack: "React, Redux Toolkit, JavaScript, SCSS, HTML, Node, Mongo",
+      link: "https://spotify-clone-omega-weld.vercel.app/",
+      githubLink: "https://github.com/smritipradhan/spotify-clone",
     },
     {
       image: projectBackground2,
