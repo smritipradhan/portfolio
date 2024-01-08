@@ -66,7 +66,7 @@ const educationCardData = [
     duration: "2018",
   },
   {
-    role: "12th - Vivekananda Kendra Vidyalaya, Umrangso,Assam ",
+    role: "10th - Vivekananda Kendra Vidyalaya, Umrangso,Assam ",
     type: "Full Time",
     location: "Umrangso - 95%",
     duration: "2016",
