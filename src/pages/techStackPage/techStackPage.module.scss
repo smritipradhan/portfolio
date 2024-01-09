@@ -5,6 +5,7 @@
   height: 100%;
   overflow: scroll;
   padding: 60px 230px;
+  height: 100vh;
   @include maxWidth(768) {
     padding: 0px;
   }
@@ -14,6 +15,7 @@
   background-color: black;
   height: 100%;
   overflow: scroll;
+  height: 100vh;
   padding: 60px 230px;
   @include maxWidth(768) {
     padding: 0px;

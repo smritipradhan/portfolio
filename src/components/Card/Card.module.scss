@@ -26,7 +26,7 @@
   padding: 15px;
   display: flex;
   align-items: flex-start;
-
+  text-decoration: none;
   flex-direction: column;
   .titleLight {
     color: black;
@@ -107,5 +107,6 @@
   }
   .techstackText {
     font-weight: 400;
+    text-decoration: none;
   }
 }

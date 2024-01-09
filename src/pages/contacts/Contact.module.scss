@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
   .email {
     background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
     -webkit-background-clip: text;
@@ -30,6 +31,7 @@
   background-color: black;
   height: 100%;
   overflow: scroll;
+  height: 100vh;
   color: white;
   font-weight: 700;
   font-size: 58px;

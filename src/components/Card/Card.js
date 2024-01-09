@@ -5,6 +5,7 @@ import { UserContext } from "../../context/UserContext";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ projectElement }) => {
   const squareVariants = {
@@ -40,41 +41,51 @@ const Card = ({ projectElement }) => {
       variants={squareVariants}
       className="square"
     >
-      <div
-        className={
-          theme === "dark"
-            ? styles.cardContainerDark
-            : styles.cardContainerLight
-        }
+      <Link
+        to={projectElement.link}
+        target="_blank"
+        style={{ textDecoration: "none" }}
       >
-        <div className={styles.projectBackground}>
-          <img src={projectElement.image} alt="projectImage" />
-        </div>
-        <div className={styles.projectDescriptionContainer}>
-          <span
-            className={theme === "dark" ? styles.titleDark : styles.titleLight}
-          >
-            {projectElement?.projectTitle}
-          </span>
-          <div
-            className={
-              theme === "dark"
-                ? styles.descriptionDark
-                : styles.descriptionLight
-            }
-          >
-            {projectElement?.projectDescription}
+        <div
+          className={
+            theme === "dark"
+              ? styles.cardContainerDark
+              : styles.cardContainerLight
+          }
+        >
+          <div className={styles.projectBackground}>
+            <img src={projectElement.image} alt="projectImage" />
           </div>
-          <div
-            className={
-              theme === "dark" ? styles.techStackDark : styles.techStackLight
-            }
-          >
-            <span className={styles.techstackText}> Tech Stack : </span>
-            {projectElement?.techStack}
+          <div className={styles.projectDescriptionContainer}>
+            <span
+              className={
+                theme === "dark" ? styles.titleDark : styles.titleLight
+              }
+              style={{ textDecoration: "none" }}
+            >
+              {projectElement?.projectTitle}
+            </span>
+            <div
+              className={
+                theme === "dark"
+                  ? styles.descriptionDark
+                  : styles.descriptionLight
+              }
+              style={{ textDecoration: "none" }}
+            >
+              {projectElement?.projectDescription}
+            </div>
+            <div
+              className={
+                theme === "dark" ? styles.techStackDark : styles.techStackLight
+              }
+            >
+              <span className={styles.techstackText}> Tech Stack : </span>
+              {projectElement?.techStack}
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 };

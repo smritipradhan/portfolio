@@ -1,15 +1,12 @@
-import React from "react";
-import styles from "./MyProject.module.scss";
-import { useContext } from "react";
-import { UserContext } from "../../../../context/UserContext";
+import React, { useContext } from "react";
 import Card from "../../../../components/Card/Card";
-import trelloClone from "./../../../../assets/images/trello.png";
-import projectBackground2 from "./../../../../assets/images/projectBackground2.svg";
-import projectBackground3 from "./../../../../assets/images/projectBackground3.svg";
+import { UserContext } from "../../../../context/UserContext";
+import portfolio from "./../../../../assets/images/portfolio2.png";
 import projectBackground4 from "./../../../../assets/images/projectBackground4.svg";
-import projectBackground5 from "./../../../../assets/images/projectBackground5.svg";
-import projectBackground6 from "./../../../../assets/images/projectBackground6.svg";
 import spotify from "./../../../../assets/images/spotify-clone.png";
+import trelloClone from "./../../../../assets/images/trello.png";
+import apple from "./../../../../assets/images/apple.png";
+import styles from "./MyProject.module.scss";
 
 const MyProject = () => {
   const { theme } = useContext(UserContext);
@@ -34,48 +31,22 @@ const MyProject = () => {
       githubLink: "https://github.com/smritipradhan/spotify-clone",
     },
     {
-      image: projectBackground2,
-      projectTitle: "Login using Custom Hook",
+      image: portfolio,
+      projectTitle: "Portfolio 2.0",
       projectDescription:
-        "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-      techStack: "",
-      link: "",
-      githubLink: "",
+        "Welcome to the refreshed and revitalized version of my digital portfolio! With a passion for innovation and an eye for aesthetics, I've taken the time to give my online presence a significant upgrade. This revamped portfolio not only exhibits my skills and projects but also provides a seamless and engaging experience for visitors.",
+      techStack: "React, JavaScript, CSS, HTML",
+      link: "https://smritiportfolio.vercel.app/",
+      githubLink: "https://github.com/smritipradhan/portfolio2.0",
     },
     {
-      image: projectBackground3,
-      projectTitle: "Sending HTTP Request",
-      projectDescription: "Sending HTTP Requests. Connecting to Database",
-      techStack: "",
-      link: "",
-      githubLink: "",
-    },
-    {
-      image: projectBackground4,
+      image: apple,
       projectTitle: "Apple UI",
       projectDescription:
         "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
       techStack: "",
-      link: "",
-      githubLink: "",
-    },
-    {
-      image: projectBackground5,
-      projectTitle: "React Boiler Plate",
-      projectDescription:
-        "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-      techStack: "",
-      link: "",
-      githubLink: "",
-    },
-    {
-      image: projectBackground6,
-      projectTitle: "Project using Node JS",
-      projectDescription:
-        "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-      techStack: "",
-      link: "",
-      githubLink: "https://github.com/smritipradhan/nodejs-farm",
+      link: "https://apple-ui-psi.vercel.app/",
+      githubLink: "https://github.com/smritipradhan/apple-ui",
     },
   ];
   return (
